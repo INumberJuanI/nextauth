@@ -1,0 +1,26 @@
+
+.hamburger {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: black;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%, 0);
+    width: 80%;
+    height: inherit;
+    background-color: inherit;
+}
+.hamburger::before {
+    top: -10px;
+    transform: translate( -50%, 50%);
+}
+.hamburger::after {
+    top: 10px;
+    transform: translate( -50%, -50%);
+}

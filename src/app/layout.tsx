@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter as FontSans } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import Navigation from '@/components/Navigation/Navigation'
+import SidebarWrapper from '@/components/SidebarWrapper'
 
 export const fontSans = FontSans({ 
   subsets: ['latin'], 
@@ -25,8 +25,8 @@ export default function RootLayout({
       className={cn(
         "min-h-screen bg-background font-sans antialiased",
         fontSans.variable
-      )}>
-        <Navigation />        
+      )}>   
+        <SidebarWrapper />
         {children}
       </body>
     </html>
